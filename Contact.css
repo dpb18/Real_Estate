@@ -1,0 +1,83 @@
+.c-container{
+    justify-content: space-between;
+    gap: 5rem;
+}
+.c-container div{
+    flex: 1;
+    gap: 2rem;
+}
+.c-right{
+    width: 100%;
+}
+.c-left{
+    gap: 0.8rem;
+}
+.c-right img{
+    border-radius: 15rem 15rem 0 0;
+    width: 500px;
+    height: 50vh;
+}
+.conatctModes{
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.conatctModes .row{
+    gap: 1.5rem;
+}
+.mode{
+    width: 18rem;
+    padding: 1rem;
+    border: 0.8px solid rgba(128, 128, 128, 0.712);
+    border-radius: 25px;
+    gap: 3rem;
+    transition: all 300ms ease-in;
+}
+.mode .button{
+    width: 100%;
+    background: var(--lightBlue);
+    color: blue;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.mode >:nth-child(1){
+    width: 100%;
+    gap: 1.5rem;
+}
+.flexCenter .icon{
+    color: blue;
+    height: 60px;
+    border-radius: 2rem;
+    background: var(--lightBlue)
+}
+.mode .detail .primaryText{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.mode:hover{
+    scale: 1.1;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.mode .button:hover{
+    background: var(--blue-gradient);
+    color: white;
+}
+@media(max-width:1024px){
+    .c-container{
+        flex-direction: column;
+    }
+    .c-right{
+        justify-content: center;
+    }
+    .conatctModes{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+    .c-right img{
+        width: 400px;
+    }
+    
+}
